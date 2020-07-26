@@ -1,0 +1,30 @@
+
+<mat-card>
+    <mat-card-title>Materia</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Materia"
+                [(ngModel)]="materia.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Período"
+                [(ngModel)]="materia.periodo" name="periodo">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Módulo"
+                [(ngModel)]="materia.modulo" name="modulo">
+        </mat-form-field>
+        <mat-form-field>
+            <textarea input matInput  placeholder="Conteúdo"
+                [(ngModel)]="materia.conteudo" name="conteudo"></textarea>
+        </mat-form-field>
+    </form>
+
+<button mat-raised-button (click)="createMateria()" >
+    Salvar 
+</button>
+
+<button mat-raised-button (click)="cancel()">
+    Cancelar
+</button>
+</mat-card>

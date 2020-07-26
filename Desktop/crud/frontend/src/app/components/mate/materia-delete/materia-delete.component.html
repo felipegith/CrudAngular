@@ -1,0 +1,30 @@
+
+<mat-card>
+    <mat-card-title>Excluir </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Materia"
+                [value]="materia.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Período"
+                [value]="materia.periodo" name="periodo" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Módulo"
+                [value]="materia.modulo" name="modulo" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <textarea input matInput  placeholder="Conteúdo"
+                [value]="materia.conteudo" name="conteudo" disabled></textarea>
+        </mat-form-field>
+    </form>
+
+<button mat-raised-button (click)="deleteMateria()" >
+    Excluir
+</button>
+
+<button mat-raised-button (click)="cancel()">
+    Cancelar
+</button>
+</mat-card>
